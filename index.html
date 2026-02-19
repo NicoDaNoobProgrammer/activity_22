@@ -1,60 +1,175 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of John Doe</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Code</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <h1 style="text-align:center;">John Doe</h1>
-        <p style="text-align:center;">Home | Projects | Blogs | Contact</p>
-    </header>
-    <h2 style="text-align:center;">Web Developer and Designer</h2>
-    <table border="1" width="100%">
-        <tr>
-            <td>
-                <h3>Portfolio Highlights</h3>
-                <ul>
-                    <li>Responsive HTML Layout</li>
-                    <li>E-commerce Storefront</li>
-                    <li>Interactive Form Design</li>
-                    <li>Event Countdown Widget</li>
-                    <li>Prototype Landing Pages</li>
-                </ul>
-            </td>
-            <td>
-                <h3>Career Achievements</h3>
-                <p>Frontend Developer [Intern] at XYZ<br>Headed major product redesigns resulting in a 40% increase in user engagement.<br><a href="#">View My LinkedIn Profile</a></p>
-                <h3>Community Involvement</h3>
-                <p>Active participant in local and online developer forums. Regularly contribute to web development blogs and GitHub projects.<br><a href="#">Visit My GitHub</a></p>
-            </td>
-            <td>
-                <h3>Academic Qualifications</h3>
-                <p>B.Tech (Computer Science) from ABC University</p>
-                <p>Specializations:</p>
-                <ul>
-                    <li>Systems Analysis</li>
-                    <li>Advanced JavaScript Techniques</li>
-                    <li>Web Accessibility Standards</li>
-                    <li>Performance Optimization in Web Applications</li>
-                    <li>Cloud Computing Infrastructure</li>
-                    <li>Security in Web Applications</li>
-                    <li>Advanced Algorithms</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <h3>Peer Reviews</h3>
-    <table border="1" width="100%">
-        <tr>
-            <td>John Doe consistently delivers high-quality, innovative solutions that exceed project expectations. - Steven, Project Lead</td>
-            <td>John Doe is known for his precise attention to detail and his ability to mentor younger developers. - David, UI Designer</td>
-            <td>John's approach to problem-solving has been instrumental in our success. - Sarah, Frontend Developer</td>
-        </tr>
-    </table>
-    <footer style="text-align:center;">
-        © [2025] All rights reserved by John Doe
-    </footer>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <div>
+          <h1 class="navbar-brand">Portfolio</h1>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#about">About</a></li>
+          <li><a href="#my-works">Portfolio</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="home-content" id="home-page">
+      <div class="name">
+        <h1>Hi, I'm Nico</h1>
+        <p>A New Web Developer in training.</p>
+      </div>
+      <div class="angle-down-icon">
+        <a href="#about"><i class="fas fa-angle-down"></i></a>
+      </div>
+    </div>
+  </header>
+  <section class="about-me" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="left-content">
+          <div>
+            <h1 class="about-heading">About Me</h1>
+          </div>
+          <img src="https://i.postimg.cc/Hx4nChpH/fbavatar-1630400663387-6838396024049256103.png" alt="image" />
+          <p>
+            I am 20 year old, BSIT student studied at Pratibha College of Commerce and Computer studies.
+            I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new
+            things; the more, the better.
+          </p>
+          <div class="work-arrow">
+            <p>
+              <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
+            </p>
+          </div>
+        </div>
+        <div class="skills">
+          <div class="right-content">
+            <div>
+              <h1 class="skills-heading">My Skills</h1>
+            </div>
+            <div class="skills-bar">
+              <div class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line"><span class="html"></span></div>
+                <div class="bar">
+                  <div class="info">
+                    <span>CSS</span>
+                  </div>
+                  <div class="progress-line"><span class="css"></span></div>
+                  <div class="bar">
+                    <div class="info">
+                      <span>BOOTSTRAP</span>
+                    </div>
+                    <div class="progress-line"><span class="bootstrap"></span></div>
+                    <div class="bar">
+                      <div class="info">
+                        <span>JAVASCRIPT</span>
+                      </div>
+                      <div class="progress-line"><span class="javascript"></span></div>
+                      <div class="bar">
+                        <div class="info">
+                          <span>C Programming</span>
+                        </div>
+                        <div class="progress-line"><span class="c"></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="work-arrow-2">
+              <p>
+                <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="my-works">
+    <div class="portfolio">
+      <div class="proj-heading">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="portfolio-content container">
+        <div class="proj-1">
+          <img src="https://i.postimg.cc/qM9TjGTG/Screenshot-80.png">
+          <div class="proj1-details">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>Restaurant Website UI</h2>
+            <p>Build Using HTML,CSS,JS</p>
+            <button><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i
+                  class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
+                  class="fas fa-external-link-alt"></i></a>
+            </button>
+          </div>
+        </div>
+
+        <div class="proj-2">
+          <img src="https://i.postimg.cc/FR848bSm/Screenshot-76.png">
+          <div class="proj2-details">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <h2>Profile Card</h2>
+            <p>Build Using HTML,CSS</p>
+            <button><a href="https://github.com/sanketbodke/CodePen" target="blank">View source <i
+                  class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button><a href="https://codepen.io/sanketbodke/pen/NWgKyZW" target="blank">Try it Live <i
+                  class="fas fa-external-link-alt"></i></a>
+            </button>
+          </div>
+
+        </div>
+        <div class="more-work">
+          <p>
+            More
+          </p>
+          <a href="https://codepen.io/sanketbodke" target="blank">CodePen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="contact" id="contact-me">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p class="mail">
+          Get in touch with me <i class="fas fa-arrow-right"></i> sanketbodke26@gmail.com
+        </p>
+        <p class="links">Or find me on:</p>
+        <a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i class="fab fa-linkedin">
+            Linkedin</i></a>
+        <a href="https://codepen.io/sanketbodke" target="blank"><i class="fab fa-codepen"> CodePen</i></a>
+        <a href="https://github.com/sanketbodke" target="blank"><i class="fab fa-github"></i> Github</a>
+        <a href="https://dev.to/sanketbodake" target="blank"><i class="fab fa-dev"></i> Dev Community</a>
+        <a href="https://twitter.com/Sanket46171296" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
+        <a href="https://www.instagram.com/imsanketbodke/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+      </div>
+    </div>
+  </div>
+  <!-- JAVASCRIPT -->
+  <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
+
 </html>
